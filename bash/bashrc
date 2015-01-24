@@ -194,3 +194,7 @@ hash vi &>/dev/null && export EDITOR=vi && export VISUAL=vi
 if [[ -f ~/.bashrc_local ]]; then
     . ~/.bashrc_local
 fi
+
+if [[ -f /usr/bin/byobu-launch ]]; then
+    _byobu_sourced=1 . /usr/bin/byobu-launch
+fi
