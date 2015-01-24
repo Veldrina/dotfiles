@@ -59,19 +59,6 @@ if [[ -f ${HOME}/.bash_logout || -L ${HOME}/.bash_logout ]]; then
 fi
 ln -s ${PWD}/bash/bash_logout ${HOME}/.bash_logout
 
-# Root
-## rootrc
-if [[ -f ${HOME}/.rootrc || -L ${HOME}/.rootrc ]]; then
-    rm -f ${HOME}/.rootrc
-fi
-ln -s ${PWD}/root/rootrc ${HOME}/.rootrc
-
-## rootlogon.C
-if [[ -f ${HOME}/.rootlogon.C || -L ${HOME}/.rootlogon.C ]]; then
-    rm -f ${HOME}/.rootlogon.C
-fi
-ln -s ${PWD}/root/rootlogon.C ${HOME}/.rootlogon.C
-
 # Readline
 if [[ -f ${HOME}/.inputrc || -L ${HOME}/.inputrc ]]; then
     rm -f ${HOME}/.inputrc
@@ -90,24 +77,6 @@ if [[ -f ${HOME}/.gitignore || -L ${HOME}/.gitignore ]]; then
     rm -f ${HOME}/.gitignore
 fi
 ln -s ${PWD}/git/gitignore ${HOME}/.gitignore
-
-# Screen
-if [[ -f ${HOME}/.screenrc || -L ${HOME}/.screenrc ]]; then
-    rm -f ${HOME}/.screenrc
-fi
-ln -s ${PWD}/screen/screenrc ${HOME}/.screenrc
-
-# Xmodmap
-if [[ -f ${HOME}/.Xmodmap || -L ${HOME}/.Xmodmap ]]; then
-    rm -f ${HOME}/.Xmodmap
-fi
-ln -s ${PWD}/xmodmap/Xmodmap ${HOME}/.Xmodmap
-
-# astyle
-if [[ -f ${HOME}/.astylerc || -L ${HOME}/.astylerc ]]; then
-    rm -f ${HOME}/.astylerc
-fi
-ln -s ${PWD}/astyle/astylerc ${HOME}/.astylerc
 
 # Vim
 
